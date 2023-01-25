@@ -16,12 +16,23 @@
     </ul>
     <input id="x" type="number">*<input id="y" type="number"> <button id="btn">add</button>
     <div id="root"></div>
+
+    <input id="a" type="number">+<input id="b" type="number"> <button id="bot">add</button>
+    <div id="root"></div>
 </body>
 <script>
     document.getElementById("btn").onclick=()=>{
 var x = parseInt(document.getElementById('x').value);
 var y = parseInt(document.getElementById('y').value);
+    
 document.getElementById('root').innerText=x*y;
+    }
+
+document.getElementById("bot").onclick=()=>{
+var a = parseInt(document.getElementById('a').value);
+var b = parseInt(document.getElementById('b').value);
+
+document.getElementById('root').innerText=a+b;
     }
 </script>
 </html>
