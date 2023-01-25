@@ -14,5 +14,14 @@
         <li>MANGO</li>
         <li>PERU</li>
     </ul>
+    <input id="x" type="number">*<input id="y" type="number"> <button id="btn">add</button>
+    <div id="root"></div>
 </body>
+<script>
+    document.getElementById("btn").onclick=()=>{
+var x = parseInt(document.getElementById('x').value);
+var y = parseInt(document.getElementById('y').value);
+document.getElementById('root').innerText=x*y;
+    }
+</script>
 </html>
