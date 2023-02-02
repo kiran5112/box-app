@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>📠My Calculater📠</h1>
+
+
+        <input id="x" type="number">*<input id="y" type="number"> <button id="btn">add</button>
+        <div id="root"></div>
+
+        <input id="a" type="number">+<input id="b" type="number"> <button id="bot">add</button>
+        <div id="root2"></div>
+        <input id="cat" type="number">-<input id="dog" type="number"><button id="bot1">Cal</button>
+        <div id="bark"></div>
+        <input id="k1" type="number">/<input id="k2" type="number"><button id="bot2">Cal</button>
+        <div id="dark"></div>
+    </div>
+</body>
+<script>
+    document.getElementById("btn").onclick = () => {
+        var x = parseInt(document.getElementById('x').value);
+        var y = parseInt(document.getElementById('y').value);
+
+        document.getElementById('root').innerText = x * y;
+    }
+
+    document.getElementById("bot").onclick = () => {
+        var a = parseInt(document.getElementById('a').value);
+        var b = parseInt(document.getElementById('b').value);
+
+        document.getElementById('root2').innerText = a + b;
+    }
+    document.getElementById("bot1").onclick = () => {
+        var cat = document.getElementById("cat").value
+        var dog = document.getElementById("dog").value;
+
+        document.getElementById("bark").innerText = cat - dog;
+
+    }
+    document.getElementById("bot2").onclick = () => {
+        var k1 = document.getElementById("k1").value
+        var k2 = document.getElementById("k2").value;
+
+        document.getElementById("dark").innerText = k1 / k2;
+
+    }
+
+
+
+</script>
+
+</html>

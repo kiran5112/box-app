@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFILE MATCHER</title>
+    <style>
+        .main {
+            background-color: darksalmon;
+            width: 350px;
+            height: 400px;
+            border-radius: 40px;
+            border-style: dotted;
+            padding: 20px;
+        }
+
+        input {
+            border: 1px red solid;
+            margin: 3px;
+        }
+        button{
+            background-image: linear-gradient(skyblue,red);
+            border-radius: 40px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h3> 👩Person =></h3>
+        <input id="k" type="=text"> <input id="k" type="=text"> <input id="k" type="=text"><br>
+        <button onclick="gener1()" id="root">Comman</button>
+        <div id="god1"> </div>
+
+        <h3>🧑‍🦰Person =></h3>
+        <input id="k1" type="=text"> <input id='k2' type="=text"> <input id="k3" type="=text"> <br>
+        <button onclick="gener()" id="root">Comman</button>
+        <div id="god"> </div>
+
+        
+    </div>
+</body>
+<script>
+    var hobby1 = ['playing cricket', 'cooking', 'running', 'swiming'];
+
+    var hobby2 = ['shutting', 'reading', 'playing cricket', 'cooking'];
+    function gener() {
+        var gener = document.getElementById("k1").value;
+        document.getElementById("god").innerHTML = gener;
+
+
+    }
+    function gener1() {
+
+        var gener1 = document.getElementById("k").value;
+        document.getElementById("god1").innerHTML = gener1;
+    }
+
+</script>
+
+</html>
